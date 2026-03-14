@@ -1,0 +1,17 @@
+import axios from "axios";
+
+const client = axios.create({
+  baseURL: "/api",
+  timeout: 10000,
+});
+
+client.interceptors.request.use((config) => {
+  const token = window.localStorage.getItem("adminToken");
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
+  return config;
+});
+
+export default client;
+

@@ -1,0 +1,89 @@
+---
+description: Always apply project and personal skills based on task type so the right SKILL.md is loaded before work begins.
+alwaysApply: true
+---
+
+# Skill Usage Map
+
+Before starting any task, identify the task type and **read the corresponding SKILL.md file(s)** from the table below. Use multiple skills when a task spans several areas (for example, full‑stack feature work should load both backend and frontend skills).
+
+## Personal Cursor Skills
+
+- **Web UI / React / Tailwind work**  
+  Read `C:\Users\dsuth\.cursor\skills\ui-design-brain\SKILL.md` **before** designing or coding any page, component, layout, or visual system.
+
+- **Browser automation and live UI flow debugging**  
+  Read `C:\Users\dsuth\.codex\skills\playwright\SKILL.md` when you need to drive a real browser from the terminal for navigation, snapshots, screenshots, or end‑to‑end flows.
+
+- **Creating or updating Cursor rules**  
+  Read `C:\Users\dsuth\.cursor\skills-cursor\create-rule\SKILL.md` whenever you create, edit, or reorganise files under `.cursor/rules/`.
+
+- **Creating new skills**  
+  Read `C:\Users\dsuth\.cursor\skills-cursor\create-skill\SKILL.md` when authoring any new skill directory with a `SKILL.md`.
+
+- **Modifying Cursor / VSCode settings**  
+  Read `C:\Users\dsuth\.cursor\skills-cursor\update-cursor-settings\SKILL.md` before changing `settings.json` or other editor configuration.
+
+- **Maintaining long‑term project/user memory**  
+  Read the `continual-learning` SKILL.md before mining `agent-transcripts` or updating `AGENTS.md`.
+
+## Project-Level Antigravity Kit Skills (`.agent/skills/`)
+
+When a task matches one of the areas below, load the named skill from `.agent/skills/<skill-name>/SKILL.md` before coding.
+
+- **System design, full‑stack scaffolding, and high‑level architecture**  
+  Use `app-builder`, `architecture`, and `plan-writing`.
+
+- **React components, hooks, and state management**  
+  Use `react-patterns`.
+
+- **Next.js / modern frontend routing (when relevant)**  
+  Use `nextjs-best-practices`.
+
+- **Tailwind CSS utilities, responsive layout, and design tokens**  
+  Use `tailwind-patterns` and, for richer visual design, `frontend-design` and `ui-ux-pro-max`.
+
+- **REST / HTTP API design and Express route structure**  
+  Use `api-patterns` and `nodejs-best-practices`.
+
+- **Node.js runtime behaviour, async patterns, and server structure**  
+  Use `nodejs-best-practices`.
+
+- **Database schema design and SQL querying**  
+  Use `database-design` (and `prisma-expert` if Prisma is introduced later).
+
+- **TypeScript types, generics, and configuration**  
+  Use `typescript-expert`.
+
+- **Unit and integration testing**  
+  Use `testing-patterns`, `tdd-workflow`, and `lint-and-validate`.
+
+- **End‑to‑end and browser testing**  
+  Use `webapp-testing` (and combine with the `playwright` personal skill when running Playwright via CLI).
+
+- **Security reviews and hardening**  
+  Use `vulnerability-scanner` and `red-team-tactics`.
+
+- **Debugging and incident investigation**  
+  Use `systematic-debugging`.
+
+- **Performance profiling and optimisation**  
+  Use `performance-profiling`.
+
+- **DevOps, CI/CD, Docker, and server management**  
+  Use `deployment-procedures`, `docker-expert`, and `server-management`.
+
+- **WordPress CMS integration and Hostinger deployment for mrsutherland.net**  
+  Use `wordpress-cms` and `deploy-hostinger`.
+
+## Workflows (Slash Commands)
+
+Prefer the workflows below when you need structured multi‑step procedures:
+
+- `/plan` — plan complex tasks and break them into steps.
+- `/create` — create new features or modules.
+- `/debug` — diagnose and fix bugs.
+- `/test` — design and run test plans.
+- `/deploy` — prepare and execute deployments (pair with `deploy-hostinger` when targeting Hostinger).
+- `/orchestrate` — coordinate multiple specialist agents for larger changes.
+
